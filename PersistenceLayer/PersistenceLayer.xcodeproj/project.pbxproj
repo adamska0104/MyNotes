@@ -10,6 +10,10 @@
 		4C528B8D1EE55AF80004B391 /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C528B8C1EE55AF80004B391 /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C528B941EE55AF80004B391 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C528B891EE55AF80004B391 /* PersistenceLayer.framework */; };
 		4C528B991EE55AF80004B391 /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C528B981EE55AF80004B391 /* PersistenceLayerTests.m */; };
+		4C8E450E1EE65F66006F2E2D /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E450C1EE65F66006F2E2D /* Note.h */; };
+		4C8E450F1EE65F66006F2E2D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E450D1EE65F66006F2E2D /* Note.m */; };
+		4C8E45131EE68582006F2E2D /* NoteDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E45111EE68582006F2E2D /* NoteDAO.h */; };
+		4C8E45141EE68582006F2E2D /* NoteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E45121EE68582006F2E2D /* NoteDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		4C528B931EE55AF80004B391 /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C528B981EE55AF80004B391 /* PersistenceLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayerTests.m; sourceTree = "<group>"; };
 		4C528B9A1EE55AF80004B391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8E450C1EE65F66006F2E2D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		4C8E450D1EE65F66006F2E2D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		4C8E45111EE68582006F2E2D /* NoteDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDAO.h; sourceTree = "<group>"; };
+		4C8E45121EE68582006F2E2D /* NoteDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		4C528B8B1EE55AF80004B391 /* PersistenceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				4C8E450B1EE65F0D006F2E2D /* dao */,
+				4C8E450A1EE65EFC006F2E2D /* domain */,
 				4C528B8C1EE55AF80004B391 /* PersistenceLayer.h */,
 				4C528B8E1EE55AF80004B391 /* Info.plist */,
 			);
@@ -86,6 +96,24 @@
 			path = PersistenceLayerTests;
 			sourceTree = "<group>";
 		};
+		4C8E450A1EE65EFC006F2E2D /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				4C8E450C1EE65F66006F2E2D /* Note.h */,
+				4C8E450D1EE65F66006F2E2D /* Note.m */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		4C8E450B1EE65F0D006F2E2D /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				4C8E45111EE68582006F2E2D /* NoteDAO.h */,
+				4C8E45121EE68582006F2E2D /* NoteDAO.m */,
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +121,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8E450E1EE65F66006F2E2D /* Note.h in Headers */,
+				4C8E45131EE68582006F2E2D /* NoteDAO.h in Headers */,
 				4C528B8D1EE55AF80004B391 /* PersistenceLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8E45141EE68582006F2E2D /* NoteDAO.m in Sources */,
+				4C8E450F1EE65F66006F2E2D /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +410,7 @@
 				4C528B9F1EE55AF80004B391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C528BA01EE55AF80004B391 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +419,7 @@
 				4C528BA21EE55AF80004B391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
