@@ -11,6 +11,8 @@
 		4C528BB81EE55B800004B391 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C528BAD1EE55B800004B391 /* BusinessLogicLayer.framework */; };
 		4C528BBD1EE55B800004B391 /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C528BBC1EE55B800004B391 /* BusinessLogicLayerTests.m */; };
 		4C8E45161EE6962C006F2E2D /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E45151EE6962C006F2E2D /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4C8E451D1EE6A34A006F2E2D /* NoteBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E451B1EE6A34A006F2E2D /* NoteBL.h */; };
+		4C8E451E1EE6A34A006F2E2D /* NoteBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E451C1EE6A34A006F2E2D /* NoteBL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		4C528BBC1EE55B800004B391 /* BusinessLogicLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLogicLayerTests.m; sourceTree = "<group>"; };
 		4C528BBE1EE55B800004B391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8E45151EE6962C006F2E2D /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MyNotesWorkspace-chlhuriikktsocdrguaufxwpcimb/Build/Products/Debug-iphonesimulator/PersistenceLayer.framework"; sourceTree = "<group>"; };
+		4C8E451B1EE6A34A006F2E2D /* NoteBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBL.h; sourceTree = "<group>"; };
+		4C8E451C1EE6A34A006F2E2D /* NoteBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteBL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				4C528BB01EE55B800004B391 /* BusinessLogicLayer.h */,
 				4C528BB21EE55B800004B391 /* Info.plist */,
+				4C8E451B1EE6A34A006F2E2D /* NoteBL.h */,
+				4C8E451C1EE6A34A006F2E2D /* NoteBL.m */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -97,6 +103,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8E451D1EE6A34A006F2E2D /* NoteBL.h in Headers */,
 				4C528BB11EE55B800004B391 /* BusinessLogicLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8E451E1EE6A34A006F2E2D /* NoteBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
