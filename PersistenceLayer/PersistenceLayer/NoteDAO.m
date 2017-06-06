@@ -12,7 +12,7 @@
 
 static NoteDAO *sharedSingleton = nil;
 
-+(NoteDAO *) sharedInstance {
++ (NoteDAO *)sharedInstance {
     static dispatch_once_t once;
 
     dispatch_once(&once, ^{
@@ -35,15 +35,15 @@ static NoteDAO *sharedSingleton = nil;
     return sharedSingleton;
 }
 
--(void) create:(Note *)model {
+- (void)create:(Note *)model {
     [self.listDate addObject:model];
 }
 
--(void) remove:(Note *)model {
+- (void)remove:(Note *)model {
     [self.listDate removeObject:model];
 }
 
--(Note *) findByID:(Note *)model {
+- (Note *)findByID:(Note *)model {
     for (Note *note in self.listDate) {
         if ([note.date isEqualToDate:model.date])
             return note;
@@ -52,7 +52,7 @@ static NoteDAO *sharedSingleton = nil;
     return nil;
 }
 
--(void) modify:(Note *)model {
+- (void)modify:(Note *)model {
     for (Note *note in self.listDate) {
         if ([note.date isEqualToDate:model.date]) {
             note.content = model.content;
@@ -61,7 +61,7 @@ static NoteDAO *sharedSingleton = nil;
     }
 }
 
--(NSMutableArray *) findAll {
+- (NSMutableArray *)findAll {
     return self.listDate;
 }
 

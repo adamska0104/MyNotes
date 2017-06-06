@@ -10,9 +10,9 @@
 		4C528B8D1EE55AF80004B391 /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C528B8C1EE55AF80004B391 /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C528B941EE55AF80004B391 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C528B891EE55AF80004B391 /* PersistenceLayer.framework */; };
 		4C528B991EE55AF80004B391 /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C528B981EE55AF80004B391 /* PersistenceLayerTests.m */; };
-		4C8E450E1EE65F66006F2E2D /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E450C1EE65F66006F2E2D /* Note.h */; };
+		4C8E450E1EE65F66006F2E2D /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E450C1EE65F66006F2E2D /* Note.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8E450F1EE65F66006F2E2D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E450D1EE65F66006F2E2D /* Note.m */; };
-		4C8E45131EE68582006F2E2D /* NoteDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E45111EE68582006F2E2D /* NoteDAO.h */; };
+		4C8E45131EE68582006F2E2D /* NoteDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E45111EE68582006F2E2D /* NoteDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8E45141EE68582006F2E2D /* NoteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E45121EE68582006F2E2D /* NoteDAO.m */; };
 /* End PBXBuildFile section */
 

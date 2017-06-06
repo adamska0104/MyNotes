@@ -10,7 +10,7 @@
 
 @implementation Note
 
--(instancetype)initWithDate:(NSDate *)date content:(NSString *)content {
+- (instancetype)initWithDate:(NSDate *)date content:(NSString *)content {
     self = [super init];
     if (self) {
         self.date = date;

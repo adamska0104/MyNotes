@@ -13,8 +13,8 @@
 @property (strong, nonatomic) NSDate *date;
 @property (strong, nonatomic) NSString *content;
 
--(instancetype)initWithDate:(NSDate *)date content:(NSString *)content;
+- (instancetype)initWithDate:(NSDate *)date content:(NSString *)content;
 
--(instancetype)init;
+- (instancetype)init;
 
 @end

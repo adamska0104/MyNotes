@@ -13,16 +13,16 @@
 
 @property (strong, nonatomic) NSMutableArray *listDate;
 
-+(NoteDAO *) sharedInstance;
++ (NoteDAO *)sharedInstance;
 
--(void) create:(Note *)model;
+- (void)create:(Note *)model;
 
--(void) remove:(Note *)model;
+- (void)remove:(Note *)model;
 
--(Note *) findByID:(Note *)model;
+- (Note *)findByID:(Note *)model;
 
--(void) modify:(Note *)model;
+- (void)modify:(Note *)model;
 
--(NSMutableArray *) findAll;
+- (NSMutableArray *)findAll;
 
 @end
