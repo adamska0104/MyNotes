@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2E56FB1EE7BC4A0051F357 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2E56FA1EE7BC4A0051F357 /* BusinessLogicLayer.framework */; };
+		4C2E57041EE7E3950051F357 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E57031EE7E3950051F357 /* AddViewController.m */; };
 		4C8E452D1EE6AA39006F2E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E452C1EE6AA39006F2E2D /* main.m */; };
 		4C8E45301EE6AA39006F2E2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E452F1EE6AA39006F2E2D /* AppDelegate.m */; };
 		4C8E45331EE6AA39006F2E2D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E45321EE6AA39006F2E2D /* MasterViewController.m */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C2E56FA1EE7BC4A0051F357 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MyNotesWorkspace-chlhuriikktsocdrguaufxwpcimb/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
+		4C2E57021EE7E3950051F357 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		4C2E57031EE7E3950051F357 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		4C8E45281EE6AA39006F2E2D /* PresentationLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8E452C1EE6AA39006F2E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C8E452E1EE6AA39006F2E2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2E56FB1EE7BC4A0051F357 /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 		4C8E451F1EE6AA39006F2E2D = {
 			isa = PBXGroup;
 			children = (
+				4C2E56FA1EE7BC4A0051F357 /* BusinessLogicLayer.framework */,
 				4C8E452A1EE6AA39006F2E2D /* PresentationLayer */,
 				4C8E45471EE6AA39006F2E2D /* PresentationLayerTests */,
 				4C8E45291EE6AA39006F2E2D /* Products */,
@@ -90,6 +97,8 @@
 				4C8E45321EE6AA39006F2E2D /* MasterViewController.m */,
 				4C8E45341EE6AA39006F2E2D /* DetailViewController.h */,
 				4C8E45351EE6AA39006F2E2D /* DetailViewController.m */,
+				4C2E57021EE7E3950051F357 /* AddViewController.h */,
+				4C2E57031EE7E3950051F357 /* AddViewController.m */,
 				4C8E45371EE6AA39006F2E2D /* Main.storyboard */,
 				4C8E453A1EE6AA39006F2E2D /* Assets.xcassets */,
 				4C8E453C1EE6AA39006F2E2D /* LaunchScreen.storyboard */,
@@ -218,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2E57041EE7E3950051F357 /* AddViewController.m in Sources */,
 				4C8E45301EE6AA39006F2E2D /* AppDelegate.m in Sources */,
 				4C8E45331EE6AA39006F2E2D /* MasterViewController.m in Sources */,
 				4C8E452D1EE6AA39006F2E2D /* main.m in Sources */,
@@ -355,6 +365,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.ark.PresentationLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -366,6 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.ark.PresentationLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +424,7 @@
 				4C8E454F1EE6AA39006F2E2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C8E45501EE6AA39006F2E2D /* Build configuration list for PBXNativeTarget "PresentationLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				4C8E45521EE6AA39006F2E2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import <BusinessLogicLayer/NoteBL.h>
+#import <PersistenceLayer/Note.h>
+
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController

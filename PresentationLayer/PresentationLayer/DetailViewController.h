@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import <BusinessLogicLayer/NoteBL.h>
+#import <PersistenceLayer/Note.h>
+
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;

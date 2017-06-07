@@ -11,7 +11,7 @@
 		4C528BB81EE55B800004B391 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C528BAD1EE55B800004B391 /* BusinessLogicLayer.framework */; };
 		4C528BBD1EE55B800004B391 /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C528BBC1EE55B800004B391 /* BusinessLogicLayerTests.m */; };
 		4C8E45161EE6962C006F2E2D /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E45151EE6962C006F2E2D /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4C8E451D1EE6A34A006F2E2D /* NoteBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E451B1EE6A34A006F2E2D /* NoteBL.h */; };
+		4C8E451D1EE6A34A006F2E2D /* NoteBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8E451B1EE6A34A006F2E2D /* NoteBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8E451E1EE6A34A006F2E2D /* NoteBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E451C1EE6A34A006F2E2D /* NoteBL.m */; };
 /* End PBXBuildFile section */
 
