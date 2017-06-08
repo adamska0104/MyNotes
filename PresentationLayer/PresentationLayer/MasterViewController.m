@@ -1,4 +1,4 @@
-//
+   //
 //  MasterViewController.m
 //  PresentationLayer
 //
@@ -95,12 +95,17 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Note *note = self.listData[indexPath.row];
+        Note *del_note = self.listData[indexPath.row];
         NoteBL *bl = [[NoteBL alloc] init];
-        self.listData = [bl removeNote:note];
+        self.listData = [bl removeNote:del_note];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        NSLog(@"------------------");
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+//        Note *ins_note = [Note alloc] initWithDate:<#(NSDate *)#> content:<#(NSString *)#>
+//        NoteBL *bl = [[NoteBL alloc] init];
+//        self.listData = [bl createNote:note];
+        NSLog(@"++++++++++++++++++");
     }
 }
 

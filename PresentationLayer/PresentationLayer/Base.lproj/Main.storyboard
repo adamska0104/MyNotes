@@ -139,13 +139,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lwa-NP-erk">
-                                <rect key="frame" x="300" y="447" width="0.0" height="0.0"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-DQ-xcl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="319"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" id="JXf-Ct-xUF"/>
-                                    <constraint firstAttribute="height" id="YTs-Ga-g8i"/>
-                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -153,8 +149,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lwa-NP-erk" firstAttribute="centerX" secondItem="Sli-hG-2cb" secondAttribute="centerX" id="A9s-NN-J68"/>
-                            <constraint firstItem="I1S-bJ-Si4" firstAttribute="top" secondItem="lwa-NP-erk" secondAttribute="bottom" constant="153" id="Civ-CU-eax"/>
+                            <constraint firstItem="Cyy-DQ-xcl" firstAttribute="centerX" secondItem="Sli-hG-2cb" secondAttribute="centerX" id="Eft-uT-bHt"/>
+                            <constraint firstItem="Cyy-DQ-xcl" firstAttribute="leading" secondItem="Sli-hG-2cb" secondAttribute="leading" id="NGU-o0-1Lm"/>
+                            <constraint firstItem="I1S-bJ-Si4" firstAttribute="top" secondItem="Cyy-DQ-xcl" secondAttribute="bottom" constant="217" id="ZSt-pr-jp0"/>
+                            <constraint firstItem="Cyy-DQ-xcl" firstAttribute="top" secondItem="0Xj-lt-dqG" secondAttribute="bottom" id="juk-VW-qZY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="增加" id="3jI-z0-epr">
@@ -170,7 +168,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="textView" destination="lwa-NP-erk" id="xtx-6h-NzA"/>
+                        <outlet property="textView" destination="Cyy-DQ-xcl" id="I1w-hB-T7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8N-el-CwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -195,7 +193,6 @@
         <!--Navigation Controller-->
         <scene sceneID="DR0-2o-SyI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="99c-cH-gYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWb-a1-ik1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TTD-Wr-jMg">
@@ -207,6 +204,7 @@
                         <segue destination="XDn-hD-X3f" kind="relationship" relationship="rootViewController" id="U5e-wW-o8t"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99c-cH-gYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1474" y="-630"/>
         </scene>

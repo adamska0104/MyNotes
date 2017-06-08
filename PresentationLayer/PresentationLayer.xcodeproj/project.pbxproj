@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2E56FB1EE7BC4A0051F357 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2E56FA1EE7BC4A0051F357 /* BusinessLogicLayer.framework */; };
 		4C2E57041EE7E3950051F357 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E57031EE7E3950051F357 /* AddViewController.m */; };
+		4C874D231EE9257B00DF93C7 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C874D221EE9257B00DF93C7 /* BusinessLogicLayer.framework */; };
+		4C874D251EE9286400DF93C7 /* PersistenceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C874D1E1EE9257600DF93C7 /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C874D261EE9286800DF93C7 /* BusinessLogicLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C874D221EE9257B00DF93C7 /* BusinessLogicLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C8E452D1EE6AA39006F2E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E452C1EE6AA39006F2E2D /* main.m */; };
 		4C8E45301EE6AA39006F2E2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E452F1EE6AA39006F2E2D /* AppDelegate.m */; };
 		4C8E45331EE6AA39006F2E2D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E45321EE6AA39006F2E2D /* MasterViewController.m */; };
@@ -29,10 +31,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4C874D211EE9257600DF93C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4C874D261EE9286800DF93C7 /* BusinessLogicLayer.framework in Embed Frameworks */,
+				4C874D251EE9286400DF93C7 /* PersistenceLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4C2E56FA1EE7BC4A0051F357 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MyNotesWorkspace-chlhuriikktsocdrguaufxwpcimb/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
 		4C2E57021EE7E3950051F357 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		4C2E57031EE7E3950051F357 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		4C874D1E1EE9257600DF93C7 /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = PersistenceLayer.framework; path = "/Users/mc/Library/Developer/Xcode/DerivedData/MyNotesWorkspace-chlhuriikktsocdrguaufxwpcimb/Build/Products/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<absolute>"; };
+		4C874D221EE9257B00DF93C7 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "/Users/mc/Library/Developer/Xcode/DerivedData/MyNotesWorkspace-chlhuriikktsocdrguaufxwpcimb/Build/Products/Debug-iphoneos/BusinessLogicLayer.framework"; sourceTree = "<absolute>"; };
 		4C8E45281EE6AA39006F2E2D /* PresentationLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8E452C1EE6AA39006F2E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C8E452E1EE6AA39006F2E2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2E56FB1EE7BC4A0051F357 /* BusinessLogicLayer.framework in Frameworks */,
+				4C874D231EE9257B00DF93C7 /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +91,8 @@
 		4C8E451F1EE6AA39006F2E2D = {
 			isa = PBXGroup;
 			children = (
+				4C874D221EE9257B00DF93C7 /* BusinessLogicLayer.framework */,
+				4C874D1E1EE9257600DF93C7 /* PersistenceLayer.framework */,
 				4C2E56FA1EE7BC4A0051F357 /* BusinessLogicLayer.framework */,
 				4C8E452A1EE6AA39006F2E2D /* PresentationLayer */,
 				4C8E45471EE6AA39006F2E2D /* PresentationLayerTests */,
@@ -135,6 +156,7 @@
 				4C8E45241EE6AA39006F2E2D /* Sources */,
 				4C8E45251EE6AA39006F2E2D /* Frameworks */,
 				4C8E45261EE6AA39006F2E2D /* Resources */,
+				4C874D211EE9257600DF93C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,7 +387,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.ark.PresentationLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,7 +399,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloud.ark.PresentationLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

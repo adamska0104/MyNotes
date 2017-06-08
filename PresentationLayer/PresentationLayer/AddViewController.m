@@ -21,6 +21,11 @@
     // Do any additional setup after loading the view.
     self.textView.delegate = self;
     [self.textView becomeFirstResponder];
+    self.textView.selectedRange = NSMakeRange(10, 0);
+    self.textView.backgroundColor = [UIColor blueColor];
+    //[self.textView setTintColor:[UIColor blueColor]];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +59,37 @@
     }
     
     return YES;
+}
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
+    NSLog(@"textViewShouldBeginEditing");
+    //[self.textView becomeFirstResponder];
+    return YES;
+}
+
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView {
+    NSLog(@"textViewShouldEndEditing");
+    
+    
+    return YES;
+}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    NSLog(@"textViewDidBeginEditing");
+    
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    NSLog(@"textViewDidEndEditing");
+    //[self.textView resignFirstResponder];
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    NSLog(@"textViewDidChange");
+}
+
+- (void)textViewDidChangeSelection:(UITextView *)textView {
+    NSLog(@"textViewDidChangeSelection");
 }
 
 /*
